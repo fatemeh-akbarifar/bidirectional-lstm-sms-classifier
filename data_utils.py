@@ -1,6 +1,6 @@
 """Small, explicit dataset download helpers."""
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 import shutil
 import zipfile
 
@@ -12,7 +12,8 @@ def download(url, destination):
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary = destination.with_suffix(destination.suffix + ".part")
     try:
-        with urlopen(url, timeout=120) as response, temporary.open("wb") as output:
+        request = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; FCCPortfolio/1.0)"})
+        with urlopen(request, timeout=120) as response, temporary.open("wb") as output:
             shutil.copyfileobj(response, output)
         temporary.replace(destination)
     finally:

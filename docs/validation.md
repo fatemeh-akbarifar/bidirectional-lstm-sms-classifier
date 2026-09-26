@@ -33,7 +33,7 @@ Confusion matrix (rows = actual, columns = predicted; ham then spam):
 
 ## Behavioral tests
 
-`python -m pytest -q`: **4 passed**. Covers raw-text inference, unseen words, empty messages, invalid labels, persistence of preprocessing/predictions, disjoint message splits, and unsafe archive paths.
+`python -m pytest -q`: **5 passed**. Covers raw-text inference, unseen words, empty messages, invalid labels, persistence of preprocessing/predictions, disjoint message splits, and unsafe archive paths.
 
 These are single-seed results on the provided split, not a production guarantee. The original seven-example challenge check scored **6/7** at the default 0.5 threshold. The short promotional-sale example was a false negative (spam score 0.4649). [Per-example results](challenge-examples.json) are recorded without changing the threshold to fit those examples. No full challenge pass or certification is claimed.
 
@@ -44,3 +44,7 @@ The pinned requirements installed successfully into a new virtual environment wi
 ## Hosted CI
 
 [Python 3.11 GitHub Actions run](https://github.com/fatemeh-akbarifar/bidirectional-lstm-sms-classifier/actions/runs/36242641304) completed successfully for the published implementation.
+
+## First-run downloads
+
+The CDN rejected Python's default HTTP user agent (403). The downloader now supplies an explicit client header; a fresh real HTTPS download matched the recorded checksum. A focused test verifies that header, complete file writing, and cache reuse.
