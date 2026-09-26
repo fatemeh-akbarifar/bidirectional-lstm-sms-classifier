@@ -1,0 +1,46 @@
+{
+  "classification_report": {
+    "ham": {
+      "precision": 0.9867768595041322,
+      "recall": 0.9908713692946058,
+      "f1-score": 0.9888198757763975,
+      "support": 1205.0
+    },
+    "spam": {
+      "precision": 0.9395604395604396,
+      "recall": 0.9144385026737968,
+      "f1-score": 0.926829268292683,
+      "support": 187.0
+    },
+    "accuracy": 0.9806034482758621,
+    "macro avg": {
+      "precision": 0.9631686495322859,
+      "recall": 0.9526549359842014,
+      "f1-score": 0.9578245720345402,
+      "support": 1392.0
+    },
+    "weighted avg": {
+      "precision": 0.9804338490662942,
+      "recall": 0.9806034482758621,
+      "f1-score": 0.9804921145698927,
+      "support": 1392.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1194,
+      11
+    ],
+    [
+      16,
+      171
+    ]
+  ],
+  "train_rows": 3045,
+  "validation_rows": 762,
+  "test_rows": 1392,
+  "epochs_run": 7,
+  "seed": 42,
+  "source_train_test_exact_message_overlap": 128,
+  "remaining_train_test_exact_message_overlap": 0
+}
