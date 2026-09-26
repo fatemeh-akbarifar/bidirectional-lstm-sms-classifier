@@ -1,0 +1,55 @@
+{
+  "correct": 6,
+  "total": 7,
+  "results": [
+    {
+      "expected": "ham",
+      "prediction": [
+        0.001838659169152379,
+        "ham"
+      ]
+    },
+    {
+      "expected": "spam",
+      "prediction": [
+        0.4649116098880768,
+        "ham"
+      ]
+    },
+    {
+      "expected": "ham",
+      "prediction": [
+        0.0005943379946984351,
+        "ham"
+      ]
+    },
+    {
+      "expected": "spam",
+      "prediction": [
+        0.8195658326148987,
+        "spam"
+      ]
+    },
+    {
+      "expected": "spam",
+      "prediction": [
+        0.9953336119651794,
+        "spam"
+      ]
+    },
+    {
+      "expected": "ham",
+      "prediction": [
+        0.0006378915859386325,
+        "ham"
+      ]
+    },
+    {
+      "expected": "ham",
+      "prediction": [
+        0.0014142919098958373,
+        "ham"
+      ]
+    }
+  ]
+}

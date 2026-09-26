@@ -35,7 +35,7 @@ Confusion matrix (rows = actual, columns = predicted; ham then spam):
 
 `python -m pytest -q`: **4 passed**. Covers raw-text inference, unseen words, empty messages, invalid labels, persistence of preprocessing/predictions, disjoint message splits, and unsafe archive paths.
 
-These are single-seed results on the provided split, not a production guarantee. No freeCodeCamp certification or seven-example challenge-test pass is claimed.
+These are single-seed results on the provided split, not a production guarantee. The original seven-example challenge check scored **6/7** at the default 0.5 threshold. The short promotional-sale example was a false negative (spam score 0.4649). [Per-example results](challenge-examples.json) are recorded without changing the threshold to fit those examples. No full challenge pass or certification is claimed.
 
 ## Clean-environment verification
 
