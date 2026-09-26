@@ -30,3 +30,7 @@ The validation report describes newly executed runs. It does not retroactively c
 ## Data provenance
 
 [Dataset checksums](data-manifest.json) identify the exact downloaded inputs used for validation. These are hashes of public dataset files, not private Drive content.
+
+## Original work is preserved
+
+See [the original project record](original-work.md) for archived code and saved outputs. These are separate from maintenance changes and their validation results.

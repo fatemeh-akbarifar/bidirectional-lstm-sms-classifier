@@ -4,6 +4,12 @@
 
 A natural-language-processing project that classifies SMS messages as ham or spam using learned word embeddings and a bidirectional long short-term memory (BiLSTM) network. It demonstrates text preprocessing, sequence modeling, class-specific evaluation, and portable inference from raw text.
 
+## Original work
+
+The original notebook implements learned word embeddings, a bidirectional LSTM, and a raw-message prediction function. That notebook is preserved alongside the maintained runnable edition. Numerical results from later maintenance checks are labeled separately.
+
+[Original notebook and evidence](docs/original-work.md). The runnable edition below includes maintenance fixes; new validation numbers are kept separate from historical achievements.
+
 ## Run locally
 
 ```bash
@@ -46,9 +52,9 @@ Class mapping: **0 = ham, 1 = spam**. The default decision threshold is 0.5. Tok
 
 `artifacts/` contains `model.keras`, `metrics.json`, `history.json`, and `predictions.csv`. Generated artifacts and downloaded data are ignored by Git. Message text is not included in the exported predictions CSV.
 
-## Verified results
+## Maintenance validation (September 2026)
 
-Verified evaluation **accuracy: 98.06%**, **spam recall: 91.44%**, **spam F1: 0.9268**, after removing exact training/evaluation message overlap.
+The maintained implementation achieved evaluation **accuracy: 98.06%**, **spam recall: 91.44%**, **spam F1: 0.9268**, after removing exact training/evaluation message overlap. The original seven-example challenge check scored **6/7** at the default threshold; see the report for the false negative.
 
 See [the reproducibility report](docs/validation.md) for measured results, commands, environment, and the limits of validation.
 
