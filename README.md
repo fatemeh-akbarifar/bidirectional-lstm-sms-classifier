@@ -23,6 +23,16 @@ Notebook: [sms_classification.ipynb](sms_classification.ipynb). [Open in Colab](
 
 ## Method
 
+```mermaid
+flowchart LR
+    A[SMS text] --> B[Training-fitted vocabulary]
+    B --> C[120-token sequence]
+    C --> D[32-dimensional embedding]
+    D --> E[Bidirectional LSTM]
+    E --> F[Sigmoid spam score]
+    F --> G[Ham or spam]
+```
+
 1. Download the two supplied freeCodeCamp TSV files.
 2. Remove training messages that occur exactly in the supplied evaluation file, and deduplicate remaining training messages. Preserve the supplied evaluation file.
 3. Create a stratified 80/20 training/validation split from the cleaned training pool.
