@@ -1,5 +1,7 @@
 # SMS spam classification with a bidirectional LSTM
 
+[![Tests](https://github.com/fatemeh-akbarifar/bidirectional-lstm-sms-classifier/actions/workflows/tests.yml/badge.svg)](https://github.com/fatemeh-akbarifar/bidirectional-lstm-sms-classifier/actions/workflows/tests.yml)
+
 A natural-language-processing project that classifies SMS messages as ham or spam using learned word embeddings and a bidirectional long short-term memory (BiLSTM) network. It demonstrates text preprocessing, sequence modeling, class-specific evaluation, and portable inference from raw text.
 
 ## Run locally

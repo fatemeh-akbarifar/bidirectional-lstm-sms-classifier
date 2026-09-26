@@ -26,3 +26,7 @@ Class mapping: **0 = ham, 1 = spam**. The default decision threshold is 0.5. Tok
 ## Reading the evidence
 
 The validation report describes newly executed runs. It does not retroactively claim that historical notebook outputs used the corrected evaluation pipeline. Unit tests verify behavior; they are not model-quality benchmarks.
+
+## Data provenance
+
+[Dataset checksums](data-manifest.json) identify the exact downloaded inputs used for validation. These are hashes of public dataset files, not private Drive content.

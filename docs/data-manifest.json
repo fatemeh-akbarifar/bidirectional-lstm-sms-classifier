@@ -1,0 +1,14 @@
+[
+  {
+    "file": "train-data.tsv",
+    "source": "https://cdn.freecodecamp.org/project-data/sms/train-data.tsv",
+    "sha256": "7a72d271d37f9ee79e620df72731727abc9d950702a758525b5503a890c4d6d2",
+    "size_bytes": 358233
+  },
+  {
+    "file": "valid-data.tsv",
+    "source": "https://cdn.freecodecamp.org/project-data/sms/valid-data.tsv",
+    "sha256": "803f7f5908845838de3a42811256779b1eed026e94cde7a65fcaa94c8f260b8d",
+    "size_bytes": 118774
+  }
+]

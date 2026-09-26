@@ -36,3 +36,11 @@ Confusion matrix (rows = actual, columns = predicted; ham then spam):
 `python -m pytest -q`: **4 passed**. Covers raw-text inference, unseen words, empty messages, invalid labels, persistence of preprocessing/predictions, disjoint message splits, and unsafe archive paths.
 
 These are single-seed results on the provided split, not a production guarantee. No freeCodeCamp certification or seven-example challenge-test pass is claimed.
+
+## Clean-environment verification
+
+The pinned requirements installed successfully into a new virtual environment with no inherited site packages. `pip check` found no broken requirements, and this project's test suite passed in that environment. Python 3.11 hosted CI is tracked separately.
+
+## Hosted CI
+
+[Python 3.11 GitHub Actions run](https://github.com/fatemeh-akbarifar/bidirectional-lstm-sms-classifier/actions/runs/36242641304) completed successfully for the published implementation.
